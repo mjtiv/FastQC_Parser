@@ -1,0 +1,6 @@
+Parameter File
+
+The directory locations are seperated by different lines (multiple locations can be listed)
+	
+DIRECTORIES
+C:\DIRECTORY\of\FastQC\Results

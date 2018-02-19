@@ -22,11 +22,8 @@ quantify the visualization of the data seen in the html files.
 Open up the program and run in python, output will put in the same directory as program
 
 #Output Files from Program
-1. FASTQC_Sample_Final_Report.txt
--contains the average of all the lanes quality scores (breaks up reads by forward and reverse)
-2. FASTQC_Sample_Log_File.txt
--log file of all the averages from each lane (use for de-bugging of code ---if issues occur)
-
+Various FASTQC outputs from the statistical analysis performed by FastQC (mean, median, lower quartile, upper quartile
+tenth percentile, ninetieth percentile and summary report file). In total seven files are outputed. A directory is created by the program called "Log_File_Directory," which contains all the log files for all the statistical tests performed by the program (6 files).
 
 References
 

@@ -113,6 +113,11 @@ def parse_and_print_results(report_file, log_file, list_of_directories, position
         directory_pathway = list_of_directories[i]
 
         directory_list = []
+
+        #Change to current working directory
+        os.chdir(list_of_directories[i])
+
+        #Get a list of directories inside directories
         found_directories = os.listdir(list_of_directories[i])
         for found_directory in found_directories:
             if os.path.isdir(found_directory):
@@ -269,6 +274,10 @@ def parse_for_summary_results(list_of_directories, fastqc_summary_report):
         directory_pathway = list_of_directories[i]
 
         directory_list = []
+
+        #Change to current working directory
+        os.chdir(list_of_directories[i])
+
         found_directories = os.listdir(list_of_directories[i])
         for found_directory in found_directories:
             if os.path.isdir(found_directory):
